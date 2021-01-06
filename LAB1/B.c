@@ -3,7 +3,7 @@
 #include<ctype.h> // for using isalpha(although not necessary to use).
 #include<stdlib.h> // used to exit (in this program) program.
 
-int main(int argc, char const *argv[])
+void main(int argc, char const *argv[])
 {
 	char s[100000]; // considered max size upto 1e+5;
 	
@@ -37,5 +37,5 @@ int main(int argc, char const *argv[])
 	
 	fprintf(stderr,"%d\n",count); // printing on to stderr
 	
-    exit(0);
+        exit(0);
 }
