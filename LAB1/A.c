@@ -1,11 +1,12 @@
-#include<stdio.h>
-int main(int argc, char const *argv[])
+#include<stdio.h> // for stdin , stdout.
+#include<stdlib.h> // for exiting program
+void main(int argc, char const *argv[])
 {
 	int numNonPrintedArgs = 0;
 
-	for(int i=1;i<argc;i++)
+	for(int i=1;i<argc;i++) // start from 1 as 0th index represents 'command-line program name'.
 	{
-		if(argv[i][0]!='-')
+		if(argv[i][0]!='-') // check the first character of the argument as if there is any '-' character.
 		{
 			printf("%s ",argv[i]);
 		}
@@ -14,9 +15,10 @@ int main(int argc, char const *argv[])
 			numNonPrintedArgs++;
 		}
 	}
-	if(numNonPrintedArgs!=argc-1)
+	if(numNonPrintedArgs!=argc-1) // condition for printing new line character.
 	{
 		printf("\n");
 	}
-	return 0;
+	
+	exit(0);
 }
