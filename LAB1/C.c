@@ -29,10 +29,7 @@ void main()
     printf("\nText/String after changing uppercase to lowercase and vice versa : \n");
     for(int i=0;i<len;i++)
     {
-        if(i==0)
-        {
-            printf("\n");
-        }
+
         printf("%c",x[i]);
         if(i==len-1)
         {
