@@ -7,8 +7,8 @@ void main(int argc, char const *argv[])
         char s;
 
         int count = 0; // count -> character not in range of 'a' - 'z' and 'A' - 'Z';
-        
-        printf("Keep on  entering characters until you pressed(ctrl + D doubletimes at end -> EOF) : \n");
+
+        printf("Keep on  entering characters until you pressed(if last char is newline char then only one time else (ctrl + D doubletimes at end -> EOF)) : \n");
 
 
 
