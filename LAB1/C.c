@@ -1,30 +1,44 @@
 #include<stdio.h> // for input/output.
 #include<ctype.h> // islower(x),tolower(x),toupper(x) -> included in 'ctype.h';
-#include<string.h> // for string operations.
 #include<stdlib.h> // -> for exiting from program.
 
 void main()
 {
-    char s[100000];
+    char s;
+    char x[100000];
     
-    printf("Enter a string : ");
+    int len = 0; // length of the string entered until EOF.
     
-    scanf("%[^\n]%*c",s);  // gets(s); -> another way to input string with spaces.
+    printf("Enter a string(until you press(if your last char is '\n' then only one time else double times(ctrl+D) : ");
+    printf("\n");
     
 
-    for(int i=0;i<strlen(s);i++)
+    while((s=getchar())!=EOF) // read unitl EOF.
     {
-        if(islower(s[i])) // return true is s[i] is in lower case.
+        if(islower(s)) // return true is s is in lower case.
         {
-            s[i]  =  toupper(s[i]); // returns uppercase of s[i];
+            s  =  toupper(s); // returns uppercase of s;
         }
         else
         {
-            s[i]  =  tolower(s[i]); // returns lowercase of s[i]; non-alpha doesnot effect the use of tolower(x) function. 
+            s  =  tolower(s); // returns lowercase of s; non-alpha doesnot effect the use of tolower(x) function. 
+        }
+        x[len++] = s;
+    }
+    for(int i=0;i<len;i++)
+    {
+        if(i==0)
+        {
+            printf("\n");
+        }
+        printf("%c",x[i]);
+        if(i==len-1)
+        {
+            printf("\n");
         }
     }
     
-    printf("String after reversing lowercase and uppercase letters : %s\n",s);
+    
     
     exit(0);
     
