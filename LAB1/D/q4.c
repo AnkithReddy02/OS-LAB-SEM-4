@@ -80,6 +80,8 @@ int main(int argc,char **argv)
             int status;
 
             while(wait(&status)>0); // waits for all childrens to get finished.
+            
+            exit(0) ; // program finished.
         }
         else
         {
