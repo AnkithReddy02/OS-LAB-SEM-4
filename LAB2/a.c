@@ -205,8 +205,7 @@ int main()
         char *token;
         
         while(token = strtok_r(str," ",&str))
-        {
-            
+        { 
             if(strcmp(token,"exit")==0)
             {
                 exit(0);
