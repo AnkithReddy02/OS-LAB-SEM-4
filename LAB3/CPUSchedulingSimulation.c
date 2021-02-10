@@ -1,3 +1,5 @@
+// process file with id,arrival,burst is passed as argument.
+
 
 // cat results.txt for viewing the content of the file.
 // In analysis of the output file(results.txt) , if round Robin is executed twice , then 
