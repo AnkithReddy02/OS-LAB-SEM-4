@@ -1,0 +1,12 @@
+Average Time AroundTime for FCFS : 9
+Average Waiting time for FCFS : 6
+
+
+Average Time AroundTime for SRBF : 6
+Average Waiting time for SRBF : 3
+
+
+In case of avgWaitingTime : SRBF has less avgWaitingTime compared to FCFS
+
+In case of avgTurnAroundTime : SRBF has less avgTurnAroundTime comparedred to FCFS
+
