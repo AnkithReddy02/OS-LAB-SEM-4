@@ -9,4 +9,3 @@ Average Waiting time for SRBF : 3
 In case of avgWaitingTime : SRBF has less avgWaitingTime compared to FCFS
 
 In case of avgTurnAroundTime : SRBF has less avgTurnAroundTime comparedred to FCFS
-
